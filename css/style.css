@@ -3,19 +3,24 @@
     padding: 0;
 }
 
-header{
+header{ background-image: linear-gradient( to right, white, blue);
     display: flex;
-    flex-direction: column;
-    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+  
     
 }
-nav{display: flex;
+nav{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aqua;
-    justify-content: center;
-    text-decoration: none;
     padding: 30px;
-    background-color: rgb(189, 22, 22);}
+    }
+    nav a{
+        margin: 10px;
+        padding: 20px; 
+         text-decoration: none;
+    }
     h1{
         text-align: center;
         color: blue;
@@ -25,9 +30,25 @@ nav{display: flex;
         text-align: center;
         text-transform: lowercase;
     }
+  
     footer{
         display: flex;
         justify-content: center;
         text-decoration: none;
-       
-    }
+        }
+
+        .parrafo{
+            font-size: 40px;
+            animation-name: parrafo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 6s;
+        }
+  @keyframes parrafo {
+      0%{
+          color: aquamarine;
+      }
+      2%{
+          font-size: 5px;
+      }
+  }
